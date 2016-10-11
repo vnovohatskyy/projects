@@ -38,11 +38,8 @@ public class Student {
 	}
 
 	public boolean betterStudent(Student student) {
-		if (this.rating > student.getRating()) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.rating > student.getRating();
+
 	}
 
 	@Override
@@ -52,7 +49,7 @@ public class Student {
 
 	public void changeRating(int rating) {
 		this.rating = rating;
-		
+
 	}
 
 }
